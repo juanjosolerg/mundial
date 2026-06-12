@@ -8,8 +8,8 @@ on:
 
 env:
   # Dynamic construction: username/github-repo-name
-  IMAGE_NAME: ${{ vars.IMAGE_NAME }}/nombre de la imagen
-  REGISTRY:   ${{ secrets.DOCKERHUB_REGISTRY}}/ registro de Docker Hub
+  IMAGE_NAME: ${{ vars.IMAGE_NAME }}/nombre de la imagen.
+  REGISTRY:   ${{ secrets.DOCKERHUB_REGISTRY}}/ registro de Docker Hub.
 jobs:
   build-and-push:
     runs-on: ubuntu-latest 
